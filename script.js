@@ -11,19 +11,19 @@
     
  
       /*var map = new Map({
-        basemap: "streets",
+        basemap: "topo-vector",
         ground: "world-elevation"
       });*/
       var scene = new WebScene({
         portalItem:{
-         id:"8046207c1c214b5587230f5e5f8efc77" 
+         id:"001215337f694fb4a44264582520d507" 
         }
       });
       
       var camera = new Camera({
         position: [
-           -71.060217,// lon
-          42.382655, // lat
+            -90.1994,// lon
+          38.382655, // lat
           2500// elevation in meters
         ],
         tilt:45,
@@ -54,7 +54,7 @@ view.when(function() {
           view: view,
           layerInfos: [{
             layer: featureLayer,
-            title: "Major project buildings"
+            title: "camp sites"
           }]
         });
       
